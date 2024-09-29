@@ -1,11 +1,19 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
 config_version=5
 
 [application]
 
-config/name="Lam 2D Template"
+config/name="Lam 2D Godot Template"
+config/tags=PackedStringArray("template")
 run/main_scene="res://src/scene/TitleScreen.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/tags=PackedStringArray("template")
 
 [autoload]
 
