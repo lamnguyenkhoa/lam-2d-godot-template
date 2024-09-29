@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="Lam 2D Godot Template"
+config/version="0.1"
 config/tags=PackedStringArray("template")
 run/main_scene="res://src/scene/TitleScreen.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
+config/icon="res://asset/ui/project-icon.png"
 
 [autoload]
 
