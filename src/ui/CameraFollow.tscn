@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://clsdnti10u8oa"]
+
+[ext_resource type="Script" path="res://src/ui/camera_follow.gd" id="1_0ge16"]
+
+[node name="CameraFollow" type="Camera2D"]
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0
+script = ExtResource("1_0ge16")

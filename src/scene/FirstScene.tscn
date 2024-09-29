@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4boapy8sbdqp"]
+
+[ext_resource type="PackedScene" uid="uid://clsdnti10u8oa" path="res://src/ui/CameraFollow.tscn" id="1_r81uv"]
+[ext_resource type="PackedScene" uid="uid://d4ni5778a3406" path="res://src/entity/player/Player.tscn" id="2_davn6"]
+[ext_resource type="Texture2D" uid="uid://dggoende5av8a" path="res://asset/sprite/placeholder/crate.png" id="3_i3hdc"]
+[ext_resource type="PackedScene" uid="uid://byj1y3wrwtdtq" path="res://src/ui/PauseUI.tscn" id="4_woujw"]
+
+[node name="FirstScene" type="Node2D"]
+
+[node name="CameraFollow" parent="." instance=ExtResource("1_r81uv")]
+
+[node name="Player" parent="." instance=ExtResource("2_davn6")]
+
+[node name="Crate" type="Sprite2D" parent="."]
+self_modulate = Color(0.572549, 0.376471, 0.0901961, 1)
+position = Vector2(-272, -224)
+texture = ExtResource("3_i3hdc")
+
+[node name="Crate2" type="Sprite2D" parent="."]
+self_modulate = Color(0.121569, 0.384314, 0, 1)
+position = Vector2(272, -104)
+texture = ExtResource("3_i3hdc")
+
+[node name="Crate3" type="Sprite2D" parent="."]
+position = Vector2(-184, 216)
+texture = ExtResource("3_i3hdc")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseUI" parent="CanvasLayer" instance=ExtResource("4_woujw")]
